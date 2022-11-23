@@ -1,1 +1,2 @@
 include: [".well-known"]
+timezone: "America/Santiago"
