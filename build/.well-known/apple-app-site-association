@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "7WCA54BC33.cl.scotiabank.csappcard",
+                "paths": ["*"]
+            }
+        ]
+    }
+}
