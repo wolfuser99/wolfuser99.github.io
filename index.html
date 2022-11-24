@@ -24,12 +24,23 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-
   </head>
   <body>
-    <div id="root">hi2</div>
+    <div id="root">hi</div>
+    <div id="isMobile"></div>
     <a href="csappcard://"> Abrir app con "custom schema": csappcard:// </a>
     <br />
-    <a href="CencosudScotiabank://"> Abrir app con "custom schema":  CencosudScotiabank://</a>
+    <a href="CencosudScotiabank://">
+      Abrir app con "custom schema": CencosudScotiabank://</a
+    >
+
+    <script>
+      const isMobile = () =>
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        );
+      const ref = document.getElementById("isMobile");
+      ref.innerHTML = isMobile() ? "Mobile" : "Desktop";
+    </script>
   </body>
 </html>
