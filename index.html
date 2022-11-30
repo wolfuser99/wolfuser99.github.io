@@ -32,16 +32,16 @@
 
     <div id="root">hi</div>
     <div id="isMobile"></div>
-    <a href="csappcard://"> Abrir app con "custom schema": csappcard:// </a>
+    Custom schema Link1: <a href="csappcard://"> csappcard:// </a>
     <br />
     <br />
 
-    <a href="CencosudScotiabank://">
-      Abrir app con "custom schema": CencosudScotiabank://</a
-    >
+    Custom schema Link2:
+    <a href="CencosudScotiabank://"> CencosudScotiabank://</a>
 
     <br />
     <br />
+    DeepLink:
     <a href="https://csappmobile.page.link/benefits">
       https://csappmobile.page.link/benefits</a
     >
@@ -52,7 +52,8 @@
           navigator.userAgent
         );
       const ref = document.getElementById("isMobile");
-      ref.innerHTML = isMobile() ? "Mobile" : "Desktop";
+      const text = isMobile() ? "Mobile" : "Desktop";
+      ref.innerHTML = "Platform: " + text;
     </script>
   </body>
 </html>
